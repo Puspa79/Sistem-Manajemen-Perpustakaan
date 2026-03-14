@@ -103,8 +103,8 @@
                     </tr>
 
                     <tr>
-                        <td colspan="2" class="text-center" style="background-color: #ffff2b; color: black; padding: 0.5rem; border-radius: 0.25rem;">
-                            <strong>Perhitungan</strong>
+                        <td colspan="2" style="background-color: #dddddd; color: black; padding: 0.5rem; border-radius: 0.25rem;">
+                            <strong>Perhitungan :</strong>
                         </td>
                     </tr>
 
