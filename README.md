@@ -1,10 +1,10 @@
 # Tugas 1 – Eksplorasi Database dengan Query
 
 ## Identitas
-- Nama : Puspa Dwi Setyorini
-- NIM  : 60324003 
+- Nama        : Puspa Dwi Setyorini
+- NIM         : 60324003 
 - Mata Kuliah : Pemprograman Website 2
-- Semester : 4(Empat)
+- Semester    : 4 (Empat)
 
 ## Deskripsi
 Repository ini berisi file `query_tugas.sql` yang digunakan untuk melakukan
