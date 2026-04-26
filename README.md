@@ -135,28 +135,10 @@ didokumentasikan dalam bentuk **screenshot**.
 
 ---
 
-## 9. Stored Procedure
+## 9. Entity Relationship Diagram (ERD)
 
-### 9.1 Stored Procedure Tambah Buku
-Stored procedure digunakan untuk menambahkan data buku baru secara otomatis
-dengan relasi ke kategori, penerbit, dan rak.
-
-![Stored Procedure](images/QueryJoin.png)
-
----
-
-## 10. Entity Relationship Diagram (ERD)
-
-### 10.1 ERD Database Perpustakaan
+### 9.1 ERD Database Perpustakaan
 ERD menggambarkan hubungan antar tabel `buku`, `kategori_buku`,
 `penerbit`, dan `rak` berdasarkan foreign key yang telah dibuat.
 
 ![ERD Perpustakaan](images/ERD.png)
-
----
-
-## Kesimpulan
-Melalui pengerjaan Tugas 1 dan Tugas 2, database perpustakaan berhasil dirancang
-dan dianalisis secara menyeluruh. Sistem ini telah menerapkan relasi antar tabel,
-foreign key, soft delete, stored procedure, serta dokumentasi visual berupa ERD
-untuk mendukung pengelolaan data yang terstruktur dan efisien.
