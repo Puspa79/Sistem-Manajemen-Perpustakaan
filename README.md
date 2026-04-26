@@ -1,141 +1,162 @@
-# Tugas 1 – Eksplorasi Database dengan Query
+# 📚 Tugas Basis Data – Sistem Perpustakaan  
+*(Tugas 1 & Tugas 2)*
 
 ## Identitas
-- Nama        : Puspa Dwi Setyorini
-- NIM         : 60324003 
-- Mata Kuliah : Pemprograman Website 2
-- Semester    : 4 (Empat)
-
-## Deskripsi
-Repository ini berisi file `query_tugas.sql` yang digunakan untuk melakukan
-eksplorasi database perpustakaan. Query meliputi statistik buku, filter dan
-pencarian, grouping dan agregasi, update data, serta laporan khusus.
-Hasil eksekusi setiap query di phpMyAdmin didokumentasikan dalam bentuk screenshot.
+- **Nama**        : Puspa Dwi Setyorini  
+- **NIM**         : 60324003  
+- **Mata Kuliah** : Pemrograman Website 2  
+- **Semester**    : 4 (Empat)
 
 ---
 
-## A. Statistik Buku (5 Query)
+## Deskripsi
+Repository ini berisi implementasi database **Sistem Perpustakaan** yang mencakup:
 
-### 1. Total buku seluruhnya
+- **Tugas 1**: Eksplorasi database menggunakan query SQL  
+- **Tugas 2**: Desain database lengkap dengan relasi, foreign key, soft delete,
+  stored procedure, dan ERD  
+
+Seluruh query dijalankan menggunakan **phpMyAdmin** dan hasilnya
+didokumentasikan dalam bentuk **screenshot**.
+
+---
+
+# 📝 TUGAS 1 – Eksplorasi Database dengan Query
+
+## 1. Statistik Buku
+
+### 1.1 Total buku seluruhnya
 ![Total Buku](images/query1-2.png)
 
-### 2. Total nilai inventaris (sum harga × stok)
+### 1.2 Total nilai inventaris (harga × stok)
 ![Total Nilai Inventaris](images/query1-2.png)
 
-### 3. Rata-rata harga buku
+### 1.3 Rata-rata harga buku
 ![Rata-rata Harga](images/query3-4.png)
 
-### 4. Buku termahal (judul dan harga)
+### 1.4 Buku termahal
 ![Buku Termahal](images/query3-4.png)
 
-### 5. Buku dengan stok terbanyak
+### 1.5 Buku dengan stok terbanyak
 ![Stok Terbanyak](images/query5-6.png)
 
 ---
 
-## B. Filter dan Pencarian (5 Query)
+## 2. Filter dan Pencarian
 
-### 6. Buku kategori Programming dengan harga < 100.000
+### 2.1 Buku kategori Programming dengan harga < 100.000
 ![Programming < 100k](images/query5-6.png)
 
-### 7. Buku dengan judul mengandung kata "PHP" atau "MySQL"
+### 2.2 Buku dengan judul mengandung "PHP" atau "MySQL"
 ![Judul PHP atau MySQL](images/query7.png)
 
-### 8. Buku yang terbit tahun 2024
-![Tahun 2024](images/query8.jpeg)
+### 2.3 Buku yang terbit tahun 2024
+![Tahun 2024](images/query8.png)
 
-### 9. Buku dengan stok antara 5–10
-![Stok 5-10](images/query9.png)
+### 2.4 Buku dengan stok antara 5–10
+![Stok 5–10](images/query9.png)
 
-### 10. Buku dengan pengarang "Budi Raharjo"
+### 2.5 Buku dengan pengarang "Budi Raharjo"
 ![Pengarang Budi Raharjo](images/query10.png)
 
 ---
 
-## C. Grouping dan Agregasi (3 Query)
+## 3. Grouping dan Agregasi
 
-### 11. Jumlah buku per kategori dan total stok per kategori
+### 3.1 Jumlah buku dan total stok per kategori
 ![Jumlah & Stok per Kategori](images/query11-12.png)
 
-### 12. Rata-rata harga per kategori
+### 3.2 Rata-rata harga buku per kategori
 ![Rata-rata Harga per Kategori](images/query11-12.png)
 
-### 13. Kategori dengan total nilai inventaris terbesar
+### 3.3 Kategori dengan total nilai inventaris terbesar
 ![Nilai Inventaris Terbesar](images/query13-14.png)
 
 ---
 
-## D. Update Data (2 Query)
+## 4. Update Data
 
-### 14. Naikkan harga buku kategori Programming sebesar 5%
+### 4.1 Kenaikan harga buku kategori Programming sebesar 5%
 ![Update Harga](images/query13-14.png)
 
-### 15. Tambah stok 10 untuk buku dengan stok < 5
+### 4.2 Penambahan stok buku dengan stok < 5
 ![Update Stok](images/query15-17.png)
 
 ---
 
-## E. Laporan Khusus (2 Query)
+## 5. Laporan Khusus
 
-### 16. Daftar buku yang perlu restocking (stok < 5)
+### 5.1 Daftar buku yang perlu restocking (stok < 5)
 ![Restocking Buku](images/query15-17.png)
 
-### 17. Top 5 buku termahal
+### 5.2 Top 5 buku termahal
 ![Top 5 Buku Termahal](images/query15-17.png)
 
+---
 
-## Tugas 2 – Perancangan & Implementasi Database
+# 🗂️ TUGAS 2 – Desain Database
 
-### A. Struktur Database
+## 6. Struktur Database
 
-#### 1. Struktur Tabel Buku
+### 6.1 Struktur Tabel Buku
 ![Struktur Tabel Buku](images/StrukturTabelBuku.png)
 
-#### 2. Struktur Tabel Kategori Buku
+### 6.2 Struktur Tabel Kategori Buku
 ![Struktur Tabel Kategori](images/StrukturTabelKategori_Buku.png)
 
-#### 3. Struktur Tabel Penerbit
+### 6.3 Struktur Tabel Penerbit
 ![Struktur Tabel Penerbit](images/StrukturTabelPenerbit.png)
 
-#### 4. Struktur Tabel Rak
+### 6.4 Struktur Tabel Rak
 ![Struktur Tabel Rak](images/StrukturTabelRak.png)
 
 ---
 
-### B. Data Awal Tabel
+## 7. Data Awal Tabel
 
-#### 5. Data Tabel Buku
+### 7.1 Data Tabel Buku
 ![Data Buku](images/DataTabelBuku.png)
 
-#### 6. Data Tabel Kategori Buku
+### 7.2 Data Tabel Kategori Buku
 ![Data Kategori Buku](images/DataTabelKategori_Buku.png)
 
-#### 7. Data Tabel Penerbit
+### 7.3 Data Tabel Penerbit
 ![Data Penerbit](images/DataTabelPenerbit.png)
 
-#### 8. Data Tabel Rak
+### 7.4 Data Tabel Rak
 ![Data Rak](images/DataTabelRak.png)
 
 ---
 
-### C. Relasi Antar Tabel (JOIN)
+## 8. Relasi dan Query JOIN
 
-#### 9. Hasil Query JOIN Buku, Kategori, Penerbit, dan Rak
-![Query Join](images/QueryJoin.png)
+### 8.1 Hasil JOIN Tabel Buku, Kategori, Penerbit, dan Rak
 ![Hasil Join](images/HasilQueryJoin.png)
 
 ---
 
-### D. Stored Procedure
+## 9. Stored Procedure
 
-#### 10. Stored Procedure Tambah Buku
-Stored procedure digunakan untuk menambahkan data buku ke dalam tabel `buku`
-dengan relasi ke tabel `kategori_buku`, `penerbit`, dan `rak`.
+### 9.1 Stored Procedure Tambah Buku
+Stored procedure digunakan untuk menambahkan data buku baru secara otomatis
+dengan relasi ke kategori, penerbit, dan rak.
+
+![Stored Procedure](images/QueryJoin.png)
 
 ---
 
-### E. Soft Delete
+## 10. Entity Relationship Diagram (ERD)
 
-#### 11. Implementasi Soft Delete
-Setiap tabel memiliki kolom `deleted_at` untuk mendukung penghapusan data
-secara logis tanpa menghapus data secara permanen.
+### 10.1 ERD Database Perpustakaan
+ERD menggambarkan hubungan antar tabel `buku`, `kategori_buku`,
+`penerbit`, dan `rak` berdasarkan foreign key yang telah dibuat.
+
+![ERD Perpustakaan](images/ERD.png)
+
+---
+
+## Kesimpulan
+Melalui pengerjaan Tugas 1 dan Tugas 2, database perpustakaan berhasil dirancang
+dan dianalisis secara menyeluruh. Sistem ini telah menerapkan relasi antar tabel,
+foreign key, soft delete, stored procedure, serta dokumentasi visual berupa ERD
+untuk mendukung pengelolaan data yang terstruktur dan efisien.
